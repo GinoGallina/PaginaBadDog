@@ -1,2 +1,2 @@
 # PaginaBadDog
-Página hecha con Bootstrap
+Página echa con Bootstrap
