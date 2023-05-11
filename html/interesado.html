@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+      <link rel="icon" href="../img/favicon.png">
+    <title>Studio BAD DOG</title>
+  </head>
+  <body>
+    <!--HEADER -->
+    <nav class="navbar navbar-expand-lg bg-dark fs-5" data-bs-theme="dark">
+      <div class="container">
+        <a href="index.html"
+          ><img src="../img/bad-dog-studio-logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sitios
+              </a>
+              <ul class="dropdown-menu bg-light">
+                <li><a class="dropdown-item" href="#">Últimos proyectos</a></li>
+                <li><a class="dropdown-item" href="#">Sitio single-page</a></li>
+                <li><a class="dropdown-item" href="#">Sitio multi-page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comencemos.html">Comencemos</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="interesado.html"
+                >¿Interesado?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--HEADER -->
+
+    <!--MAIN -->
+    <main class="container pt-5">
+      <section class="row">
+        <article class="col-lg-12 text-center">
+          <h2 class="mb-3">¿Interesado?</h2>
+          <p class="mb-0">¡Envíame tus comentarios!</p>
+          <br />
+          <p>
+            Para más información, puedes contactarme en
+            <a href="mailto:ginogallina2002@gmail.com"
+              >ginogallina2002@gmail.com</a
+            >
+          </p>
+        </article>
+        <article class="col-lg-6 mb-4 order-2 order-lg-1 text-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13394.332487287209!2d-60.6617617607117!3d-32.93561076411163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab37fce726cb%3A0x5198195e500bd0e0!2sRock%26Feller&#39;s%20Bv.%20Oro%C3%B1o!5e0!3m2!1ses!2sar!4v1683083911454!5m2!1ses!2sar"
+            width="400"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+
+        <article class="col-lg-6 mb-4 order-1 order-lg-2">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="validationCustom01" class="mb-2">Nombre:</label>
+              <input
+                id="validationCustom01"
+                type="text"
+                class="form-control inp-req"
+                placeholder="Tu nombre"
+                required
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                name="nombre"
+              />
+              <!-- <div class="valid-feedback mb-4"></div> -->
+              <div class="valid-feedback">Aceptado!</div>
+              <div class="invalid-feedback">Debe ingresar su Nombre y solo puede contener letras o espacios</div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom02" class="mb-2 mt-4 form-label"
+                >Email:</label
+              >
+              <input
+                id="validationCustom02"
+                type="email"
+                class="form-control inp-req"
+                placeholder="Tu Email"
+                required
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                name="email"
+              />
+              <div class="valid-feedback">Aceptado!</div>
+              <div class="invalid-feedback">Debe ingresar su Email</div>
+            </div>
+            <!-- <div class="invalid-feedback mb-4">.</div> -->
+            <div class="form-group">
+              <label for="validationCustom03" class="mb-2 mt-4 form-label"
+                >Comentarios:</label
+              >
+              <textarea
+                class="form-control inp-req"
+                id="validationCustom03"
+                rows="3"
+                placeholder="Dejanos tus comentarios"
+                style="resize: none"
+                required
+                pattern=".{1,255}$"
+                name="comentarios"
+              ></textarea>
+              <div class="valid-feedback">Aceptado!</div>
+              <div class="invalid-feedback">Debe ingresar el Cuerpo</div>
+            </div>
+
+            <button class="btn btn-success mt-2" type="submit">Enviar</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <article class="container-fluid p-0">
+      <div class="card text-bg-dark bg-cards">
+        <img src="../img/about-1.jpg" class="card-img" alt="..." />
+        <div class="card-img-overlay d-flex">
+          <div class="container bg-cards mt-auto text-center">
+            <h4 class="card-title">Gino Gallina</h4>
+            <h5>Desarrollador Web</h5>
+            <p class="card-text">
+              Comencé a crear sitios y aplicaciones web en 2004.
+            </p>
+            <p class="card-text">Valoro mucho el concepto de "menos es más".</p>
+            <p class="card-text">Trabajo de forma remota e independiente.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--MAIN -->
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-2">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/ginogallina/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/GinoGallina"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Text -->
+        <section>
+          <p class="mb-0">
+            © 2023 @GinoGallina. Hecho con fines educativos, tomando inspiración
+            del sitio
+            <a href="https://www.studiocorvus.com/" target="_blank"
+              >Studio Corvus</a
+            >
+          </p>
+        </section>
+        <!-- Section: Text -->
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/75833ea205.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color_violeta: rgb(217, 0, 98);
+  --third-color: rgb(80, 20, 100);
+  --second-alpha-color:rgba(20, 25, 45, 0.75);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+  
+}
+
+.header{
+  height: 100px;
+}
+
+.nav-link,.dropdown-item{
+  color: var(--color_violeta);
+}
+
+.navbar img{
+  height: 50px;
+  width: auto;
+}
+
+.nav-item:hover{
+  background-color: var(--color_violeta);
+  color: white;
+  transition: all 0.6s ease;
+}
+
+.bg-gradient-blue-green{
+  background-color: rgba(83, 184, 152, 1);
+  background-image: linear-gradient( 131deg, rgba(28, 118, 173, 0.92), rgba(83, 184, 152, 1) );
+}
+
+.bg-img{
+  background-color: var(--third-color);
+}
+
+.btn-primary.bg-img{
+  border: 0;
+}
+  .btn-primary.bg-img:hover{
+  background-color: var(--color_violeta);
+}
+
+.dropdown-item:hover{
+  background-color: rgba(162, 156, 156, 0.874);
+  color:blueviolet;
+  transition: all 0.6s ease;
+}
+
+
+.bg-cards{
+
+  background-color: var(--second-alpha-color);
+}
+
+
+.bg-alpha-color {
+    background-color: var(--bg-alpha-color);
+}
+
+.card-img-overlay a:hover{
+  color: var(--color_violeta);
+  transition: all 0.6s ease;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-next-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
